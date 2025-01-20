@@ -16,7 +16,11 @@ const FormPage = () => {
 		formState: { errors }
 	} = useForm();
 
-	const onSubmit = data => console.log(data);
+	const onSubmit = data => {
+		console.log(data);
+		alert('Your application is updated.');
+	};
+
 	return (
 		<StyledFormContainer>
 			<h1>Form</h1>
